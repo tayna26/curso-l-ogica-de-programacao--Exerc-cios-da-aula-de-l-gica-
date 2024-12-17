@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    inteiro estoque, vendas
+    escreva("Digite a quantidade inicial de estoque: ")
+    leia (estoque)
+    enquanto (estoque > 0){
+      escreva("\n Digite a quantidade atual no estoque: ",estoque)
+      escreva("\n Digite a quantidade de itens vendidos:")
+      leia(vendas)
+
+      se(vendas <= estoque)
+      {
+        estoque = estoque - vendas
+        escreva("Venda realizada, Estoque atualizado \n")
+      } senao{
+        escreva("Quantidade de vendas excede o estoque disponivel tente novamente")
+      }
+  
+    }
+    Escreva ("Estoque esgotado.")
+  }
+}
